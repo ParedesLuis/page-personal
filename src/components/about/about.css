@@ -1,0 +1,22 @@
+.row{
+    display: flex;
+    margin-top: 10%;
+}
+
+.column-1{
+    width: 50%;
+    height: 50vh;
+    margin-right: 100px;
+    background-color: saddlebrown;
+    margin-left: 10%;
+  
+}
+.column-2{
+    width: 50%;
+    font-weight: 700;
+    margin-right: 10%;
+    
+}
+.photo{
+    
+}

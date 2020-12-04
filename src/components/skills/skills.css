@@ -1,0 +1,17 @@
+.content-skills img{
+    height: 150px;
+    width: 150px;
+    margin: 40px;
+    border-radius: 50px;
+}
+
+
+.content-skills{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    width: 75%;
+    text-align: center;
+    margin-top: 40px;
+}
