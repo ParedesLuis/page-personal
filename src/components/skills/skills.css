@@ -1,17 +1,120 @@
-.content-skills img{
-    height: 150px;
-    width: 150px;
-    margin: 40px;
-    border-radius: 50px;
+.content-skills img {
+  height: 150px;
+  width: 150px;
+  margin: 5px 40px;
+  border-radius: 50px;
 }
 
-
-.content-skills{
-    display: flex;
-    justify-content: center;
+.content-skills {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.icons{
-    width: 75%;
-    text-align: center;
-    margin-top: 40px;
+
+.icons {
+  width: 75%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  margin: 30px;
+  text-align: center;
+}
+
+.content-progress {
+  width: 100%;
+  height: 20px;
+  background: beige;
+}
+.progress-bar {
+  height: 20px;
+  background: black;
+  color: aliceblue;
+}
+.progress-bar-0 {
+  width: 95%;
+  animation: progress-0 3s;
+}
+.progress-bar-1 {
+  width: 85%;
+  animation: progress-1 3s;
+}
+.progress-bar-2 {
+  width: 60%;
+  animation: progress-2 3s;
+}
+.progress-bar-3 {
+  width: 50%;
+  animation: progress-3 3s;
+}
+.progress-bar-4 {
+  width: 60%;
+  animation: progress-4 3s;
+}
+.progress-bar-5 {
+  width: 60%;
+  animation: progress-5 3s;
+}
+.progress-bar-6 {
+  width: 50%;
+  animation: progress-6 3s;
+}
+
+@keyframes progress-0{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 95%;
+    }
+}
+@keyframes progress-1{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 85%;
+    }
+}
+@keyframes progress-2{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%;
+    }
+}
+@keyframes progress-3{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 50%;
+    }
+}
+@keyframes progress-4{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%;
+    }
+}
+@keyframes progress-5{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%;
+    }
+}
+@keyframes progress-6{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 50%;
+    }
 }

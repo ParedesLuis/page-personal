@@ -1,26 +1,46 @@
 import React from "react";
 import "./skills.css";
-import Javascript from "./Icons/javascript.svg";
-import ReactIcon from "./Icons/react.svg";
-import NodeJs3 from "./Icons/node-js (2).svg";
-import Mysql from "./Icons/mysql.svg";
-import C1 from "./Icons/c (1).svg";
-import C2 from "./Icons/c (2).svg";
-import Java from "./Icons/java.svg";
+
+import {
+  Javascript,
+  ReactIcon,
+  NodeJs3,
+  Mysql,
+  C1,
+  C2,
+  Java,
+} from "./integrations.js";
 
 function Skills() {
+  const skills = [
+    { item: Javascript, progress: 95 },
+    { item: ReactIcon, progress: 85 },
+    { item: NodeJs3, progress: 60 },
+    { item: Mysql, progress: 50 },
+    { item: C1, progress: 60 },
+    { item: C2, progress: 60 },
+    { item: Java, progress: 50 },
+  ];
   return (
-    <div className="content-skills">
-      <div className="icons">
-        <img  src={Javascript} alt="javascript" />
-        <img  src={ReactIcon} alt="react" />
-        <img  src={NodeJs3} alt="node" />
-        <img  src={Mysql} alt="mysql" />
-        <img  src={C1} alt="C" />
-        <img  src={C2} alt="C" />
-        <img  src={Java} alt="Java" />
+    <>
+      <div className="content-skills">
+        <div className="icons">
+          {skills.map((item, index) => {
+            return (
+              <div className="icon" key={index}>
+                <img src={item.item} alt={`${index}`} />
+                <div className="content-progress">
+                  <div className={`progress-bar progress-bar-${index}`}>
+                    {item.progress}%
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+      <div className="content-certifications"></div>
+    </>
   );
 }
 
