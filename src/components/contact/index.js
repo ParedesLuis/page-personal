@@ -5,7 +5,8 @@ import Instagram from './icons/instagram.svg';
 import Linked from './icons/linkedin.svg';
 import Twitter from './icons/twitter.svg';
 import Github from './icons/github.svg';
-import { googleContact,linkedinContact,instagramContact, twitterContact,githubRepository } from "./contactFunctions";
+import upworkIcon from './icons/upworkIcon.svg';
+import { googleContact,linkedinContact,instagramContact, twitterContact,githubRepository,upwork } from "./contactFunctions";
 function Home() {
   
   return (
@@ -22,6 +23,7 @@ function Home() {
         <img src={Linked} alt="linked" onClick={linkedinContact}/>
         <img src={Twitter} alt="twitter" onClick={twitterContact}/>
         <img src={Github} alt="twitter" onClick={githubRepository}/>
+        <img src={upworkIcon} alt="upwork" onClick={upwork}/>
         </div>
       </div>
     </div>

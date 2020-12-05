@@ -15,5 +15,8 @@ const twitterContact = ()=>{
 const githubRepository = ()=>{
     window.open( 'https://github.com/ParedesLuis');
 }
+const upwork = ()=>{
+    window.open( 'https://www.upwork.com/o/profiles/users/~016b4f04d4e13d47e1/');
+}
 
-export {googleContact,linkedinContact,instagramContact,twitterContact,githubRepository};
+export {googleContact,linkedinContact,instagramContact,twitterContact,githubRepository,upwork};
