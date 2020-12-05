@@ -1,45 +1,65 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./skills.css";
-
-import {
-  Javascript,
-  ReactIcon,
-  NodeJs3,
-  Mysql,
-  C1,
-  C2,
-  Java,
-} from "./integrations.js";
+import Estrella from "./Icons/estrella.svg";
+import { skills } from "./skills.js";
 
 function Skills() {
-  const skills = [
-    { item: Javascript, progress: 95 },
-    { item: ReactIcon, progress: 85 },
-    { item: NodeJs3, progress: 60 },
-    { item: Mysql, progress: 50 },
-    { item: C1, progress: 60 },
-    { item: C2, progress: 60 },
-    { item: Java, progress: 50 },
-  ];
+  const [courses, setcourses] = useState([]);
+
+  const onClick = (link) => {
+    console.log("link", link);
+    window.open(`https://platzi.com${link}`);
+  };
+  useEffect(() => {
+    fetch(
+      "https://platzi-user-api.jecsham.com/api/v1/getUserSummary/@LuisParedez"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.userData.courses);
+        setcourses(data.userData.courses);
+      });
+  }, []);
   return (
     <>
-      <div className="content-skills">
-        <div className="icons">
-          {skills.map((item, index) => {
-            return (
-              <div className="icon" key={index}>
-                <img src={item.item} alt={`${index}`} />
-                <div className="content-progress">
-                  <div className={`progress-bar progress-bar-${index}`}>
-                    {item.progress}%
-                  </div>
+      <div className="icons">
+        {skills.map((item, index) => {
+          return (
+            <div className="icon" key={index}>
+              <img src={item.item} alt={`${index}`} />
+              <div className="content-progress">
+                <div className={`progress-bar progress-bar-${index}`}>
+                  {item.progress}%
                 </div>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
-      <div className="content-certifications"></div>
+      <div className="line" />
+      <div className="content-title">
+      <img src={Estrella} alt="estrella-1" />
+      <h1 style={{ textAlign: "center" }}>Certificates Platzi</h1>
+      <img src={Estrella} alt="estrella-2" />
+      </div>
+      <div className="line" />
+      <div className="courses">
+        {courses.map((item, index) => {
+          return (
+            <div className="course" key={index}>
+              <img src={item.badge} alt={`${index}`} />
+              <p>{item.title}</p>
+              <button
+                onClick={() => {
+                  onClick(item.diploma_link);
+                }}
+              >
+                view certificate
+              </button>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }

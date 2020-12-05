@@ -12,5 +12,8 @@ const instagramContact = ()=>{
 const twitterContact = ()=>{
     window.open( 'https://twitter.com/luisparedez');
 }
+const githubRepository = ()=>{
+    window.open( 'https://github.com/ParedesLuis');
+}
 
-export {googleContact,linkedinContact,instagramContact,twitterContact};
+export {googleContact,linkedinContact,instagramContact,twitterContact,githubRepository};

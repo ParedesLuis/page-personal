@@ -7,9 +7,8 @@
 
 .card {
   box-sizing: border-box;
-  height: 350px;
-  width: 600px;
-  background: darkkhaki;
+  width: 45%;
+  background: rgba(196, 196, 196, 0.527);
   border-radius: 2em;
   border: 3px solid black;
 }
@@ -21,24 +20,24 @@
 }
 
 .card-social {
-    margin-left: 30px;
-    margin-right: 30px;
-    display: flex;
-    justify-content: center;
-  }
-  .card-social img{
-      height: 5rem;
-      width: 5rem;
-      margin: 5px; 
-  }
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-social img {
+  height: 5rem;
+  width: 5rem;
+  margin: 5px;
+}
 
-  .card-social img:active{
-    height: 5.5rem;
-    width: 5.5rem;
-  }
+.card-social img:active {
+  height: 5.5rem;
+  width: 5.5rem;
+}
 
-  .card-social img:hover{
-    cursor: pointer;
-  }
-
-
+.card-social img:hover {
+  cursor: pointer;
+}

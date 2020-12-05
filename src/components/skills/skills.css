@@ -1,13 +1,8 @@
-.content-skills img {
+.icons img {
   height: 150px;
   width: 150px;
   margin: 5px 40px;
   border-radius: 50px;
-}
-
-.content-skills {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .icons {
@@ -16,10 +11,74 @@
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
 .icon {
   margin: 30px;
+  text-align: center;
+}
+.line {
+  background-color: black;
+  width: 100%;
+  height: 2px;
+}
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.course {
+  background: aliceblue;
+  height: 200px;
+  width: 300px;
+  margin: 50px 10px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.course img {
+  position: absolute;
+  top: -70px;
+  left: 70px;
+}
+
+.content-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-title img {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+.course button {
+  height: 30px;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.course button:hover {
+  color: aliceblue;
+  background-color: black;
+}
+
+.course p {
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -62,59 +121,59 @@
   animation: progress-6 3s;
 }
 
-@keyframes progress-0{
-    0%{
-      width: 0%;
-    }
-    100%{
-      width: 95%;
-    }
+@keyframes progress-0 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
 }
-@keyframes progress-1{
-    0%{
-      width: 0%;
-    }
-    100%{
-      width: 85%;
-    }
+@keyframes progress-1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
 }
-@keyframes progress-2{
-    0%{
-      width: 0%;
-    }
-    100%{
-      width: 60%;
-    }
+@keyframes progress-2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
-@keyframes progress-3{
-    0%{
-      width: 0%;
-    }
-    100%{
-      width: 50%;
-    }
+@keyframes progress-3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
 }
-@keyframes progress-4{
-    0%{
-      width: 0%;
-    }
-    100%{
-      width: 60%;
-    }
+@keyframes progress-4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
-@keyframes progress-5{
-    0%{
-      width: 0%;
-    }
-    100%{
-      width: 60%;
-    }
+@keyframes progress-5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
-@keyframes progress-6{
-    0%{
-      width: 0%;
-    }
-    100%{
-      width: 50%;
-    }
+@keyframes progress-6 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
 }
