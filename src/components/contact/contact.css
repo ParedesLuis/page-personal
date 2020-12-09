@@ -7,37 +7,28 @@
 
 .card {
   box-sizing: border-box;
-  width: 45%;
   background: rgba(196, 196, 196, 0.527);
   border-radius: 2em;
-  border: 3px solid black;
+  padding: 40px;
 }
 .card-first {
   display: flex;
-  margin: 30px;
   text-align: center;
   justify-content: center;
+  padding: 0px 0px 20px 0px;
 }
-
 .card-social {
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .card-social img {
-  height: 5rem;
-  width: 5rem;
+  height: 80px;
+  width: 80px;
   margin: 5px;
-}
-
-.card-social img:active {
-  height: 5.5rem;
-  width: 5.5rem;
 }
 
 .card-social img:hover {
   cursor: pointer;
 }
+

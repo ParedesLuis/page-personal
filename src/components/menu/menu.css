@@ -4,24 +4,41 @@ ul li {
   font-weight: 800;
   margin-top: 20px;
   font-size: 2rem;
+  height: 50px;
 }
 a{
   text-decoration: none;
   color: black;
-  
 }
+
 ul {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  height: 50px;
+  flex-wrap: wrap;
 }
 .element{
-  height: 58px;
-  width: 100px;
+  height: auto;
+  width: auto;
 }
 
 .element:hover {
   padding-top: 10px;
   transition-duration: 0.5s;
+}
+
+@media screen and (max-width:660px){
+  .element:hover {
+    padding-top: 0px;
+  }
+  .dash{
+    display: none;
+  }
+  ul {
+    display: contents;
+    text-align: center;
+  }
+  .element{
+    margin-top: 20px;
+  }
 }

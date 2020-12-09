@@ -3,11 +3,10 @@ import "./about.css";
 
 function Home() {
   return (
-    <div className="row">
-      <div className="column-1">
-          <div className="photo">no photo at the moment</div>
+    <div className="content-about">
+      <div className="column photo">
       </div>
-      <div className="column-2">
+      <div className="column column-content">
       <p>Hi I'm Luis Paredes, a passionate web developer with 1+ year of experience with javascript I
          have worked with technologies like react and node, I work with good practices I like to grow 
          professionally and any opportunity I take to the maximum.</p>

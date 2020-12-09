@@ -7,7 +7,6 @@ function Skills() {
   const [courses, setcourses] = useState([]);
 
   const onClick = (link) => {
-    console.log("link", link);
     window.open(`https://platzi.com${link}`);
   };
   useEffect(() => {
@@ -16,7 +15,6 @@ function Skills() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.userData.courses);
         setcourses(data.userData.courses);
       });
   }, []);

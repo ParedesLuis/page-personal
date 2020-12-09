@@ -27,7 +27,6 @@
 .courses {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
   justify-content: center;
   margin: auto;
   margin-top: 100px;
@@ -45,7 +44,7 @@
 .course img {
   position: absolute;
   top: -70px;
-  left: 70px;
+  left: 70.5px;
 }
 
 .content-title {

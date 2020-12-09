@@ -10,11 +10,11 @@ export default function index() {
     <div className="menu">
       <ul>
         <li className="element"><Link to="/">Home</Link></li>
-        <li>/</li>
+        <li className="dash">/</li>
         <li className="element"><Link to="/skills">Skills</Link></li>
-        <li>/</li>
+        <li className="dash">/</li>
         <li className="element"><Link to="/about">About</Link></li>
-        <li>/</li>
+        <li className="dash">/</li>
         <li className="element"><Link to="/contact">Contact</Link></li>
       </ul>
     </div>
